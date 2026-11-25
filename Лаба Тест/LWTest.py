@@ -1,3 +1,8 @@
+import math
+
+def analytic(n0, k, t):
+    return n0 * math.exp(-k * t)
+
 def decay(n0, k, dt, steps):
     values = [n0]
     for _ in range(steps):
